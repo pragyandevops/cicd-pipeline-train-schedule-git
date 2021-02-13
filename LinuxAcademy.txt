@@ -1,0 +1,74 @@
+github.com/linuxacademy/cicd-pipeline-train-schedule-git
+
+
+Linux Academy
+
+git clone git@github.com:whboyd/cicd-pipeline-train-schedule-git.git
+
+git status
+
+goto git repository folder
+git status
+=============================================================================
+Branches and Tags
+Branches are used to maintain multiple versions of the code with different changes simultaneously.
+Branches can also be used to intereact with Ci/CD pipeline.
+
+git checkout<branch>    switching to that particular branch
+
+git checkout -b  create a new branch and checkout simultaneously
+
+git tag   are simply pointers to a particular commit. tag with s/w release versions is done normally
+
+$ git branch
+$ git checkout -b newBranch
+
+git checkout master
+
+git tag myTag
+git tag
+====================================
+
+PULL REQUEST
+===========================
+pull requests are not actually a feature of the git software itself. however, they are a useful tool ofred
+by many git remote server implementations, such as GitHub.
+
+Usually, teams work using multiple branches to manage all their changes. At some point, these
+branches need to be merged together(preferably as often as possible)
+
+Merges can be handled locally using git, but another way to do this is through pul requests.
+
+A pull request is a request made by a developer to merge theeir changes into another bbranch(usually a shared mainline).
+It gives other team member a chance to review the changes before performing the merge.
+
+
+
+Changes 
+1. Stage the changes
+git add<file>
+git add . or git add -A     adding all 
+
+git status
+
+2. commit
+git commit -m <message describing the change>
+pushing changes to local repository only
+
+3. git push
+
+git push
+git push -u<remote name, usually origin><branch name>
+
+
+vi views/index.jade
+i
+change header
+save
+
+git status
+git add .
+git status
+git commit -m "change header text"
+git status
+git push
